@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Inter", sans-serif;
+  
+  --color-zinc-950: #0a0a0c;
+  --color-cs-bg: #0D0D0F;
+  --color-cs-surface: #0a0a0c;
+  --color-cs-accent: #2A2A30;
+}
+
+@utility blueprint-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+@utility technical-line {
+  background: linear-gradient(90deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.05) 100%);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-cs-bg);
+    color: #ffffff;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Base print reset */
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 0; 
+  }
+  
+  html, body {
+    width: 297mm;
+    background-color: #0D0D0F !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    overflow: visible;
+  }
+
+  /* Specific structure for each A4 slide */
+  .pdf-slide {
+    width: 297mm;
+    height: 209mm; /* 210mm is exact, 209mm prevents accidental blank pages */
+    page-break-after: always;
+    page-break-inside: avoid;
+    break-after: page;
+    break-inside: avoid;
+    overflow: hidden;
+    position: relative;
+    /* Force background colors to print */
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .pdf-slide:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  /* Hide scrollbars and interactive elements */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .print-hidden {
+    display: none !important;
+  }
+}
+
+/* Web-specific scrolling behavior */
+@media screen {
+  .presentation-container {
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+  
+  .pdf-slide {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+}
