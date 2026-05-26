@@ -3,6 +3,7 @@ import { PageCover } from './components/PageCover';
 import { PageProblem } from './components/PageProblem';
 import { PageSolution } from './components/PageSolution';
 import { PageWhyUs } from './components/PageWhyUs';
+import { PageHoreca } from './components/PageHoreca';
 import { PagePartnership } from './components/PagePartnership';
 import { PageContacts } from './components/PageContacts';
 
@@ -14,6 +15,7 @@ export default function App() {
         <PageProblem />
         <PageSolution />
         <PageWhyUs />
+        <PageHoreca />
         <PagePartnership />
         <PageContacts />
       </main>

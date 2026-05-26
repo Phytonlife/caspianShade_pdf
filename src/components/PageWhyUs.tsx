@@ -1,4 +1,5 @@
 import { CheckCircle2, Wrench } from "lucide-react";
+import imageTeam from "../assets/images/regenerated_image_1779801319971.png";
 
 export function PageWhyUs() {
   return (
@@ -21,9 +22,9 @@ export function PageWhyUs() {
               backgroundImage: 'repeating-linear-gradient(-45deg, transparent, transparent 10px, #333 10px, #333 11px)' 
            }}></div>
            <img 
-            src="https://images.unsplash.com/photo-1541888086425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+            src={imageTeam} 
             alt="Engineer at work" 
-            className="w-full h-full object-cover grayscale opacity-50 print-hidden absolute inset-0"
+            className="w-full h-full object-cover opacity-70 print-hidden absolute inset-0 mix-blend-luminosity grayscale"
            />
            <div className="absolute inset-0 ring-1 ring-inset ring-white/10"></div>
            
@@ -92,12 +93,12 @@ export function PageWhyUs() {
           <span className="text-[10px] uppercase text-neutral-500 font-mono tracking-widest">Доставка спецтранспортом</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="text-sm font-bold text-white mb-1 uppercase tracking-wide">Hilti / Festool</span>
-          <span className="text-[10px] uppercase text-neutral-500 font-mono tracking-widest">Проф. инструмент</span>
+          <span className="text-sm font-bold text-white mb-1 uppercase tracking-wide">Проф. оборудование</span>
+          <span className="text-[10px] uppercase text-neutral-500 font-mono tracking-widest">Лазерное нивелирование</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="text-sm font-bold text-white mb-1 uppercase tracking-wide">Поддержка 24/7</span>
-          <span className="text-[10px] uppercase text-neutral-500 font-mono tracking-widest">Выезд до 48 ч</span>
+          <span className="text-sm font-bold text-white mb-1 uppercase tracking-wide">Оперативный сервис</span>
+          <span className="text-[10px] uppercase text-neutral-500 font-mono tracking-widest">Выезд в течение 24-48 ч</span>
         </div>
       </div>
     </section>

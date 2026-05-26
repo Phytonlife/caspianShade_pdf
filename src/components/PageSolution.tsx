@@ -1,4 +1,5 @@
 import { Settings, Shield, Zap, Crosshair } from "lucide-react";
+import imageZip from "../assets/images/regenerated_image_1779799691493.png";
 
 export function PageSolution() {
   return (
@@ -56,43 +57,10 @@ export function PageSolution() {
         {/* Center: Hero Visual (Abstract representation of ZIP system) */}
         <div className="col-span-8 flex items-center justify-center relative bg-[#0D0D0F] border border-white/10 overflow-hidden p-8">
            <img 
-            src="https://images.unsplash.com/photo-1599839619722-39751411ea63?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+            src={imageZip} 
             alt="Engineering architecture details" 
-            className="w-full h-full object-cover opacity-20 mix-blend-luminosity inset-0 absolute print-hidden grayscale"
+            className="w-full h-full object-cover opacity-60 mix-blend-luminosity inset-0 absolute print-hidden grayscale"
            />
-           
-           <div className="relative z-10 w-full max-w-lg border border-white/20 bg-[#0D0D0F]/90 backdrop-blur pb-4" style={{ padding: '2px' }}>
-              <div className="w-full h-6 border-b border-white/20 bg-white/5 flex items-center px-4 mb-4 justify-between">
-                 <span className="text-[10px] text-neutral-400 tracking-widest font-mono uppercase">ZIP CROSS-SECTION</span>
-                 <div className="flex space-x-1">
-                    <div className="w-1.5 h-1.5 bg-neutral-600"></div>
-                    <div className="w-1.5 h-1.5 bg-neutral-600"></div>
-                 </div>
-              </div>
-              
-              <div className="flex p-4 gap-6 items-center">
-                 {/* Abstract ZIP Rail */}
-                 <div className="w-16 h-48 bg-neutral-900 border-x border-neutral-700 relative flex justify-center">
-                    <div className="absolute top-0 bottom-0 w-2 bg-neutral-950 flex items-center justify-center border-x border-neutral-800">
-                       <div className="w-px h-full bg-neutral-500"></div>
-                    </div>
-                 </div>
-                 
-                 {/* Abstract Fabric and Box */}
-                 <div className="flex-1 flex flex-col items-center">
-                    <div className="w-full h-12 bg-neutral-900 border border-neutral-700 flex items-center justify-center">
-                       <span className="text-[10px] text-neutral-400 tracking-wider font-mono">MOTOR TUBE (SOMFY)</span>
-                    </div>
-                    <div className="w-11/12 h-36 bg-[#0D0D0F] border-x border-neutral-800 mt-[-2px] relative overflow-hidden">
-                       <div className="absolute inset-0 opacity-10" style={{ 
-                          backgroundImage: 'linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff), linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff)',
-                          backgroundPosition: '0 0, 4px 4px', backgroundSize: '8px 8px'
-                       }}></div>
-                    </div>
-                    <div className="w-11/12 h-3 bg-neutral-800"></div>
-                 </div>
-              </div>
-           </div>
         </div>
       </div>
 

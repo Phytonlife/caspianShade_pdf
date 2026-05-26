@@ -1,4 +1,8 @@
 import { Wind, Cloud, Sun, Bug } from "lucide-react";
+import imageWind from "../assets/images/regenerated_image_1779795847581.png";
+import imageDust from "../assets/images/regenerated_image_1779795853053.png";
+import imageHeat from "../assets/images/regenerated_image_1779800252248.png";
+import imageBugs from "../assets/images/regenerated_image_1779800257272.png";
 
 export function PageProblem() {
   return (
@@ -15,43 +19,31 @@ export function PageProblem() {
         {/* Left Side: Cards */}
         <div className="col-span-7 grid grid-cols-2 gap-6">
           {/* Card 1 */}
-          <div className="bg-[#0D0D0F] border border-white/10 p-6 shadow-2xl relative overflow-hidden group hover:border-white/20 transition-colors">
-            <div className="absolute top-0 right-0 p-4 opacity-5">
-              <Wind className="w-16 h-16" strokeWidth={1} />
-            </div>
-            <Wind className="w-6 h-6 text-neutral-400 mb-6" strokeWidth={1} />
+          <div className="bg-[#0D0D0F] border border-white/10 p-5 shadow-2xl relative overflow-hidden group hover:border-white/20 transition-colors flex flex-col">
+            <img src={imageWind} alt="Сильный ветер" className="h-24 w-full object-cover mb-5 border border-white/10" />
             <h3 className="text-lg font-bold text-white mb-2 uppercase tracking-wide">Сильный ветер</h3>
-            <p className="text-sm text-neutral-400 leading-relaxed font-light">Порывы до 120 км/ч повреждают стандартные тенты и маркизы. Требуется жесткая фиксация.</p>
+            <p className="text-xs text-neutral-400 leading-relaxed font-light">Порывы до 120 км/ч повреждают стандартные тенты. Требуется жесткая фиксация.</p>
           </div>
           
           {/* Card 2 */}
-          <div className="bg-[#0D0D0F] border border-white/10 p-6 shadow-2xl relative overflow-hidden group hover:border-white/20 transition-colors">
-            <div className="absolute top-0 right-0 p-4 opacity-5">
-              <Cloud className="w-16 h-16" strokeWidth={1} />
-            </div>
-            <Cloud className="w-6 h-6 text-neutral-400 mb-6" strokeWidth={1} />
+          <div className="bg-[#0D0D0F] border border-white/10 p-5 shadow-2xl relative overflow-hidden group hover:border-white/20 transition-colors flex flex-col">
+            <img src={imageDust} alt="Пыльные бури" className="h-24 w-full object-cover mb-5 border border-white/10" />
             <h3 className="text-lg font-bold text-white mb-2 uppercase tracking-wide">Пыльные бури</h3>
-            <p className="text-sm text-neutral-400 leading-relaxed font-light">Степная пыль быстро оседает на мебели. Обычное остекление не обеспечивает нужной вентиляции.</p>
+            <p className="text-xs text-neutral-400 leading-relaxed font-light">Степная пыль быстро оседает. Обычное остекление не дает нужной вентиляции.</p>
           </div>
 
           {/* Card 3 */}
-          <div className="bg-[#0D0D0F] border border-white/10 p-6 shadow-2xl relative overflow-hidden group hover:border-white/20 transition-colors">
-            <div className="absolute top-0 right-0 p-4 opacity-5">
-              <Sun className="w-16 h-16" strokeWidth={1} />
-            </div>
-            <Sun className="w-6 h-6 text-neutral-400 mb-6" strokeWidth={1} />
+          <div className="bg-[#0D0D0F] border border-white/10 p-5 shadow-2xl relative overflow-hidden group hover:border-white/20 transition-colors flex flex-col">
+            <img src={imageHeat} alt="Экстремальная жара" className="h-24 w-full object-cover mb-5 border border-white/10 opacity-80" />
             <h3 className="text-lg font-bold text-white mb-2 uppercase tracking-wide">Экстремальная жара</h3>
-            <p className="text-sm text-neutral-400 leading-relaxed font-light">Парниковый эффект на террасах летом. Необходима технологичная screen-ткань для рассеивания UV.</p>
+            <p className="text-xs text-neutral-400 leading-relaxed font-light">Парниковый эффект. Необходима технологичная screen-ткань для рассеивания UV.</p>
           </div>
 
           {/* Card 4 */}
-          <div className="bg-[#0D0D0F] border border-white/10 p-6 shadow-2xl relative overflow-hidden group hover:border-white/20 transition-colors">
-            <div className="absolute top-0 right-0 p-4 opacity-5">
-              <Bug className="w-16 h-16" strokeWidth={1} />
-            </div>
-            <Bug className="w-6 h-6 text-neutral-400 mb-6" strokeWidth={1} />
+          <div className="bg-[#0D0D0F] border border-white/10 p-5 shadow-2xl relative overflow-hidden group hover:border-white/20 transition-colors flex flex-col">
+             <img src={imageBugs} alt="Мошкара и комары" className="h-24 w-full object-cover mb-5 border border-white/10" />
             <h3 className="text-lg font-bold text-white mb-2 uppercase tracking-wide">Мошкара и комары</h3>
-            <p className="text-sm text-neutral-400 leading-relaxed font-light">Локальная особенность региона делает открытые террасы некомфортными в вечернее время.</p>
+            <p className="text-xs text-neutral-400 leading-relaxed font-light">Локальная особенность делает террасы некомфортными в вечернее время.</p>
           </div>
         </div>
 

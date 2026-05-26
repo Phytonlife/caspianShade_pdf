@@ -4,10 +4,13 @@ export function PageCover() {
   return (
     <section className="pdf-slide bg-[#0D0D0F] flex flex-col justify-between p-12 relative overflow-hidden blueprint-grid border-b border-neutral-800">
       {/* Background Image with Gradient Overlay */}
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center opacity-30 print-hidden"
-        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80")' }}
-      ></div>
+      <div className="absolute inset-0 z-0 print-hidden bg-[#0D0D0F]">
+        <img 
+          src="https://images.unsplash.com/photo-1623864778174-2c67cf75ea10?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
+          alt="Terrace background" 
+          className="w-full h-full object-cover opacity-40 mix-blend-luminosity"
+        />
+      </div>
       <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#0D0D0F] via-[#0D0D0F]/90 to-transparent"></div>
       
       {/* Top Header */}
@@ -25,7 +28,7 @@ export function PageCover() {
       {/* Center Content */}
       <div className="relative z-10 flex-1 flex flex-col justify-center max-w-4xl py-12">
         <div className="self-start px-3 py-1 border border-neutral-700 text-[10px] uppercase tracking-[0.2em] mb-6 text-neutral-400">
-          B2B Engineering Presentation 2024
+          WESTERN KAZAKHSTAN DEALER PROGRAM
         </div>
         <h1 className="text-5xl lg:text-7xl font-bold leading-[0.9] mb-8 tracking-tighter text-white">
           ИНЖЕНЕРНЫЕ СИСТЕМЫ <br />
