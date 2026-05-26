@@ -52,6 +52,8 @@
   .pdf-slide {
     width: 297mm;
     height: 209mm; /* 210mm is exact, 209mm prevents accidental blank pages */
+    box-sizing: border-box;
+    padding: 20mm 15mm !important; /* Extra padding to prevent cutoffs at top and bottom */
     page-break-after: always;
     page-break-inside: avoid;
     break-after: page;
