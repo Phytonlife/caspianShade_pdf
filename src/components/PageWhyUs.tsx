@@ -4,17 +4,17 @@ import imageTeam from "../assets/images/regenerated_image_1779801319971.png";
 export function PageWhyUs() {
   return (
     <section className="pdf-slide bg-[#0D0D0F] p-12 flex flex-col justify-center relative blueprint-grid border-b border-neutral-800">
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-white/5 print-hidden -z-10 border-l border-white/10"></div>
+      <div className="absolute top-0 right-0 w-1/3 h-full bg-white/5 -z-10 border-l border-white/10"></div>
       
-      <div className="mb-10 lg:mb-12 border-b border-white/10 pb-6">
-        <span className="text-xs font-mono tracking-[0.3em] text-neutral-500 mb-2 uppercase block">Corporate Advantage</span>
+      <div className="mb-8 border-b border-white/10 pb-4">
+        <span className="text-xs font-mono tracking-[0.3em] font-medium text-neutral-400 mb-2 uppercase block">Corporate Advantage</span>
         <h2 className="text-5xl font-bold tracking-tighter text-white leading-tight">
           ЛОКАЛЬНАЯ <br />
           <span className="text-neutral-500 font-light">ИНЖЕНЕРНАЯ КОМАНДА</span>
         </h2>
       </div>
 
-      <div className="grid grid-cols-12 gap-12 flex-1 items-start mt-8">
+      <div className="grid grid-cols-12 gap-8 flex-1 items-start mt-6">
         {/* Left Side: Image Content */}
         <div className="col-span-5 h-[360px] lg:h-[400px] relative border border-white/10 bg-[#0D0D0F] overflow-hidden">
            {/* Fallback pattern if image is hidden in print or fails */}
@@ -24,7 +24,7 @@ export function PageWhyUs() {
            <img 
             src={imageTeam} 
             alt="Engineer at work" 
-            className="w-full h-full object-cover opacity-70 print-hidden absolute inset-0 mix-blend-luminosity grayscale"
+            className="w-full h-full object-cover opacity-20 absolute inset-0"
            />
            <div className="absolute inset-0 ring-1 ring-inset ring-white/10"></div>
            

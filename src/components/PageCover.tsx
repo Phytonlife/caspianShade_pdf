@@ -4,11 +4,11 @@ export function PageCover() {
   return (
     <section className="pdf-slide bg-[#0D0D0F] flex flex-col justify-between p-12 relative overflow-hidden blueprint-grid border-b border-neutral-800">
       {/* Background Image with Gradient Overlay */}
-      <div className="absolute inset-0 z-0 print-hidden bg-[#0D0D0F]">
+      <div className="absolute inset-0 z-0 bg-[#0D0D0F]">
         <img 
           src="https://images.unsplash.com/photo-1623864778174-2c67cf75ea10?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
           alt="Terrace background" 
-          className="w-full h-full object-cover opacity-40 mix-blend-luminosity"
+          className="w-full h-full object-cover opacity-20"
         />
       </div>
       <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#0D0D0F] via-[#0D0D0F]/90 to-transparent"></div>
@@ -16,11 +16,11 @@ export function PageCover() {
       {/* Top Header */}
       <div className="relative z-10 flex justify-between items-start border-b border-white/10 pb-6">
         <div className="flex flex-col">
-          <span className="text-xs font-mono tracking-[0.3em] text-neutral-500 mb-2 uppercase">Brand Identity</span>
+          <span className="text-xs font-mono tracking-[0.3em] font-medium text-neutral-400 mb-2 uppercase">Brand Identity</span>
           <div className="text-2xl font-bold tracking-tighter text-white">CASPIAN <span className="text-neutral-400 font-light">SHADE</span></div>
         </div>
         <div className="text-right">
-          <span className="text-xs font-mono tracking-[0.3em] text-neutral-500 mb-2 uppercase">Regional HQ</span>
+          <span className="text-xs font-mono tracking-[0.3em] font-medium text-neutral-400 mb-2 uppercase">Regional HQ</span>
           <div className="text-sm font-medium tracking-wide text-white uppercase">Atyrau, Kazakhstan</div>
         </div>
       </div>

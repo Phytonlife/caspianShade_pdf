@@ -3,7 +3,7 @@ import { Coffee, Hotel, Store, Wine } from "lucide-react";
 export function PageHoreca() {
   return (
     <section className="pdf-slide bg-[#0D0D0F] p-12 flex flex-col justify-center relative blueprint-grid border-b border-neutral-800">
-      <div className="absolute top-0 right-0 w-2/5 h-full print-hidden border-l border-white/10 opacity-70 grayscale bg-[#0D0D0F]">
+      <div className="absolute top-0 right-0 w-2/5 h-full border-l border-white/10 opacity-20 bg-[#0D0D0F]">
         <img 
           src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
           alt="Horeca background" 
@@ -12,8 +12,8 @@ export function PageHoreca() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#0D0D0F] via-[#0D0D0F]/80 to-transparent"></div>
       </div>
       
-      <div className="mb-10 lg:mb-12 border-b border-white/10 pb-6 relative z-10 w-3/5">
-        <span className="text-xs font-mono tracking-[0.3em] text-neutral-500 mb-2 uppercase block">Золотой рынок</span>
+      <div className="mb-8 border-b border-white/10 pb-4 relative z-10 w-3/5">
+        <span className="text-xs font-mono tracking-[0.3em] font-medium text-neutral-400 mb-2 uppercase block">Золотой рынок</span>
         <h2 className="text-5xl font-bold tracking-tighter text-white leading-tight">
           HORECA <br />
           <span className="text-neutral-500 font-light">SOLUTIONS</span>

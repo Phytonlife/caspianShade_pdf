@@ -3,8 +3,8 @@ import { MapPin, CheckSquare, Target } from "lucide-react";
 export function PagePartnership() {
   return (
     <section className="pdf-slide bg-[#0D0D0F] p-12 flex flex-col justify-center relative blueprint-grid border-b border-neutral-800">
-      <div className="mb-10 lg:mb-12 border-b border-white/10 pb-6">
-        <span className="text-xs font-mono tracking-[0.3em] text-neutral-500 mb-2 uppercase block">Why Caspian Shade</span>
+      <div className="mb-8 border-b border-white/10 pb-4">
+        <span className="text-xs font-mono tracking-[0.3em] font-medium text-neutral-400 mb-2 uppercase block">Why Caspian Shade</span>
         <h2 className="text-5xl font-bold text-white leading-tight mb-2 tracking-tighter uppercase">
           Эксклюзивное <br/> дилерство
         </h2>
@@ -68,9 +68,9 @@ export function PagePartnership() {
       </div>
 
       {/* Bottom: Regional Map Marker logic */}
-      <div className="mt-12 flex flex-col items-center">
+      <div className="mt-8 flex flex-col items-center">
         <div className="w-full max-w-4xl border-t border-b border-white/10 py-6 flex justify-between items-center px-4 relative overflow-hidden bg-white/5">
-           <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1200&auto=format&fit=crop" className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-screen grayscale" alt="Map" />
+           <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1200&auto=format&fit=crop" className="absolute inset-0 w-full h-full object-cover opacity-10" alt="Map" />
           <span className="relative z-10 text-sm font-bold tracking-widest text-white uppercase text-center w-full">Зона интересов: Западный Казахстан</span>
         </div>
         <div className="flex gap-16 mt-6">

@@ -4,9 +4,9 @@ import imageZip from "../assets/images/regenerated_image_1779799691493.png";
 export function PageSolution() {
   return (
     <section className="pdf-slide bg-[#0D0D0F] p-12 flex flex-col justify-center blueprint-grid border-b border-neutral-800">
-      <div className="flex justify-between items-end mb-10 border-b border-white/10 pb-6">
+      <div className="flex justify-between items-end mb-8 border-b border-white/10 pb-4">
         <div>
-          <span className="text-xs font-mono tracking-[0.3em] text-neutral-500 mb-2 uppercase block">Флагманское решение</span>
+          <span className="text-xs font-mono tracking-[0.3em] font-medium text-neutral-400 mb-2 uppercase block">Флагманское решение</span>
           <h2 className="text-5xl font-bold tracking-tighter text-white leading-tight">
             ZIP-SCREEN SYSTEMS
           </h2>
@@ -18,7 +18,7 @@ export function PageSolution() {
         </div>
       </div>
 
-      <div className="grid grid-cols-12 gap-8 mb-12 flex-1">
+      <div className="grid grid-cols-12 gap-8 mb-8 flex-1">
         {/* Left Side: Callouts */}
         <div className="col-span-4 flex flex-col justify-center space-y-8 pr-4">
           <div className="flex flex-col">
@@ -59,7 +59,7 @@ export function PageSolution() {
            <img 
             src={imageZip} 
             alt="Engineering architecture details" 
-            className="w-full h-full object-cover opacity-60 mix-blend-luminosity inset-0 absolute print-hidden grayscale"
+            className="w-full h-full object-cover opacity-20 absolute inset-0"
            />
         </div>
       </div>

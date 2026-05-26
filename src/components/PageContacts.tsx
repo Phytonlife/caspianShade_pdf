@@ -3,7 +3,7 @@ import { Smartphone, Mail, MapPin, Globe } from "lucide-react";
 export function PageContacts() {
   return (
     <section className="pdf-slide bg-[#0D0D0F] p-12 flex flex-col justify-center items-center text-center relative blueprint-grid border-b border-neutral-800">
-      <div className="absolute inset-0 z-0 print-hidden opacity-5 bg-[#0D0D0F]">
+      <div className="absolute inset-0 z-0 opacity-5 bg-[#0D0D0F]">
          <img src="https://images.unsplash.com/photo-1541888086425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="contacts background" className="w-full h-full object-cover" />
       </div>
 

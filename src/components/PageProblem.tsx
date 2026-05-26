@@ -7,15 +7,15 @@ import imageBugs from "../assets/images/regenerated_image_1779800257272.png";
 export function PageProblem() {
   return (
     <section className="pdf-slide bg-[#0D0D0F] p-12 flex flex-col justify-center blueprint-grid border-b border-neutral-800">
-      <div className="mb-12 border-b border-white/10 pb-6">
-        <span className="text-xs font-mono tracking-[0.3em] text-neutral-500 mb-2 uppercase block">Региональная проблематика</span>
+      <div className="mb-8 border-b border-white/10 pb-4">
+        <span className="text-xs font-mono tracking-[0.3em] font-medium text-neutral-400 mb-2 uppercase block">Региональная проблематика</span>
         <h2 className="text-5xl font-bold tracking-tighter text-white max-w-3xl leading-tight">
           ПОЧЕМУ СТАНДАРТНЫЕ РЕШЕНИЯ <br />
           <span className="text-neutral-500 font-light">НЕ РАБОТАЮТ В АТЫРАУ</span>
         </h2>
       </div>
 
-      <div className="grid grid-cols-12 gap-12 items-start mt-8 flex-1">
+      <div className="grid grid-cols-12 gap-8 items-start mt-6 flex-1">
         {/* Left Side: Cards */}
         <div className="col-span-7 grid grid-cols-2 gap-6">
           {/* Card 1 */}
@@ -50,7 +50,7 @@ export function PageProblem() {
         {/* Right Side: Engineering Explanation */}
         <div className="col-span-5 flex flex-col justify-center h-full">
           <div className="p-8 border border-white/10 technical-line">
-            <h3 className="text-2xl font-bold tracking-tighter text-white mb-6">ИНЖЕНЕРНОЕ<br/><span className="text-neutral-500 font-light">ZIP-РЕШЕНИЕ</span></h3>
+            <h3 className="text-2xl font-bold tracking-tighter text-white mb-6">ИНЖЕНЕРНОЕ<br/><span className="text-neutral-400 font-light">ZIP-РЕШЕНИЕ</span></h3>
             <p className="text-neutral-400 font-light leading-relaxed mb-8">
               Технология ZIP использует принцип "молнии", впаянной в края ткани, которая надежно фиксируется в направляющих профилях. В сочетании с усиленными алюминиевыми системами это полностью решает климатические проблемы Западного Казахстана.
             </p>
